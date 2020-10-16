@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BOOTSTRAP CRUD LAYOUT</title>
+	
+	<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Projeto</a>
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#">Vendas</a>
+					</li>
+					<li>
+						<a href="#">Estoque</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							Cadastros <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="#">Animais</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">Produtos</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">Pedidos</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							Relatórios <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="#">Vendas</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">Financeiro</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#">Logado como: Fulano</a>
+					</li>
+					<li>
+						<a href="#">Sair</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">CADASTRO DO ANIMAIL</h3>
+			</div>
+			
+			<div class="panel-body">
+				
+				<form action="#" class="form-horizontal">
+					<fieldset>
+						<legend>Dados dos Animais</legend>
+						<div class="form-group">
+							<label for="nome" class="col-sm-2 control-label">Nome</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="nome">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Sexo</label>
+							<div class="col-sm-4">
+								<label class="radio-inline">
+									<input type="radio" name="sexo" id="Femea" value="Femea"> Femea
+								</label>
+
+								<label class="radio-inline">
+									<input type="radio" name="sexo" id="Macho" value="Macho"> Macho
+								</label>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="idade" class="col-sm-2 control-label">Idade</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="idade">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="nome" class="col-sm-2 control-label">N° Identificação</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="nome">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="data-nascimento" class="col-sm-2 control-label">Data de Nascimento</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="data-nascimento">
+							</div>
+						</div>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Dados agrários</legend>
+						<div class="form-group">
+							<label for="Fazenda" class="col-sm-2 control-label">Fazenda</label>
+							<div class="col-sm-4">
+								<input type="Fazenda" class="form-control" id="Fazenda">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="estado" class="col-sm-2 control-label">Estado</label>
+							<div class="col-sm-4">
+								<input type="estado" class="form-control" id="estado">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="cidade" class="col-sm-2 control-label">Cidade</label>
+							<div class="col-sm-4">
+								<input type="cidade" class="form-control" id="cidade">
+							</div>
+						</div>
+					</fieldset>					
+	
+						<div class="form-group">
+							<label for="Tipo" class="col-sm-2 control-label">Tipo de Animal</label>
+							<div class="col-sm-4">
+								<select class="form-control" name="Tipo" id="Tipo">
+									<option value="Raça Holandesa">Raça Holandesa</option>
+									<option value="Raça Girolando">Raça Girolando</option>
+									<option value="Raça Jersey">Raça Jersey</option>
+									<option value="Raça Pardo Suíço">Raça Pardo Suíço</option>
+									<option value="Raça Gir">Raça Gir</option>
+									<option value="Raça Guzerá">Raça Guzerá</option>
+									
+								</select>
+							</div>
+						</div>
+	
+					
+					<button type="submit" class="btn btn-primary">
+						<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Gravar
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script src="resources/js/jquery.min.js"></script>
+	<script src="resources/js/bootstrap.min.js"></script>
+</body>
+</html>
